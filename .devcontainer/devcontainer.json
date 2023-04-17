@@ -1,16 +1,16 @@
 {
-  "name": "docker",
+  "name": "protocol-squad",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:0-18",
   "customizations": {
     "vscode": {
       "extensions": [
 		"bierner.markdown-mermaid",
 		"bierner.markdown-preview-github-styles",
-		"bierner.markdown-footnotes"
+		"bierner.markdown-footnotes",
+		"esbenp.prettier-vscode"
 	]
     }
   },
-  "appPort": 8099,
   "containerEnv": {
     "DCL_DISABLE_ANALYTICS": "true",
     "SHELL": "/usr/bin/zsh"
