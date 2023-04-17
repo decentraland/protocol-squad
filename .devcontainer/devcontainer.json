@@ -1,0 +1,16 @@
+{
+  "name": "docker",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:0-18",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bierner.markdown-mermaid"
+      ]
+    }
+  },
+  "appPort": 8099,
+  "containerEnv": {
+    "DCL_DISABLE_ANALYTICS": "true",
+    "SHELL": "/usr/bin/zsh"
+  }
+}
