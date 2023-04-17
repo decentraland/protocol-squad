@@ -20,13 +20,13 @@ See eachother through comms.
 
 | Feature | Bevy | Babylon | Unity |
 | - | - | - | - |
-| CRDT protocol - ADR-117 | :check: | :check: ||
-| Scene Tick - ADR-148 | :check: | :check: ||
-| Scene Runtime ADR-133 | :check: | :check: ||
-| Load and unload scenes | :check: | :check: ||
-| Load static world ADR-111 | :check: | :check: ||
-| Resolve realm base URL | :check:? | :check: ||
-| Traversal city loading | :check: | :check: ||
+| CRDT protocol - ADR-117 | ✅ | ✅ ||
+| Scene Tick - ADR-148 | ✅ | ✅ ||
+| Scene Runtime ADR-133 | ✅ | ✅ ||
+| Load and unload scenes | ✅ | ✅ ||
+| Load static world ADR-111 | ✅ | ✅ ||
+| Resolve realm base URL | ✅? | ✅ ||
+| Traversal city loading | ✅ | ✅ ||
 | SDK Components | n of m |||
 | Static entitites ||||
 | Render avatars ||||
@@ -39,7 +39,7 @@ See eachother through comms.
 
 | SDK Component* | Bevy | Babylon | Unity |
 | - | - | - | - |
-| Transform ADR-153 | :check: | :check: ||
+| Transform ADR-153 | ✅ | ✅ ||
 | MeshRenderer ||||
 | MeshCollider ||||
 | Billboard ADR-198 ||||

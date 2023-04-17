@@ -4,8 +4,10 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "bierner.markdown-mermaid"
-      ]
+		"bierner.markdown-mermaid",
+		"bierner.markdown-preview-github-styles",
+		"bierner.markdown-footnotes"
+	]
     }
   },
   "appPort": 8099,
