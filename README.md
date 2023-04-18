@@ -58,16 +58,16 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | `├── Colliders`            | PENDING                                                  |      | ✅      |       |
 | `└── First Person Camera`  | PENDING                                                  |      | ✅      |       |
 
-| SDK Component   | Specification                                                                                           | Bevy      | Babylon   | Unity | SDK |
-| --------------- | ------------------------------------------------------------------------------------------------------- | --------- | --------- | ----- | --- |
-| `Transform`     | [ADR-153](https://adr.decentraland.org/adr/ADR-153)                                                     | ✅        | ✅        |       | ✅  |
-| `MeshRenderer`  | PENDING                                                                                                 | Partially | Partially |       | ✅  |
-| `MeshCollider`  | PENDING                                                                                                 | Partially | Partially |       | ✅  |
-| `Billboard`     | [ADR-198](https://adr.decentraland.org/adr/ADR-198)                                                     | ✅        | ✅        |       | ✅  |
-| `Raycast`       | [ADR-200](https://adr.decentraland.org/adr/ADR-200)                                                     | ✅        | ✅        |       | ✅  |
-| `PointerEvents` | [ADR-125](https://adr.decentraland.org/adr/ADR-125) [ADR-200](https://adr.decentraland.org/adr/ADR-200) |           |           |       | ✅  |
-| `GltfContainer` | PENDING                                                                                                 | ✅        | ✅        |       | ✅  |
-| `Animator`      | PENDING                                                                                                 | ✅        |           |       | ✅  |
+| SDK Component   | Specification                                                | Bevy      | Babylon   | Unity | SDK |
+| --------------- | ------------------------------------------------------------ | --------- | --------- | ----- | --- |
+| `Transform`     | [ADR-153](https://adr.decentraland.org/adr/ADR-153) (Living) | ✅        | ✅        |       | ✅  |
+| `MeshRenderer`  | PENDING                                                      | Partially | Partially |       | ✅  |
+| `MeshCollider`  | PENDING                                                      | Partially | Partially |       | ✅  |
+| `Billboard`     | [ADR-198](https://adr.decentraland.org/adr/ADR-198) (Living) | ✅        | ✅        |       | ✅  |
+| `Raycast`       | [ADR-200](https://adr.decentraland.org/adr/ADR-200) (Draft)  | ✅        | ✅        |       | ✅  |
+| `PointerEvents` | [ADR-214](https://adr.decentraland.org/adr/ADR-214) (Draft)  |           |           |       | ✅  |
+| `GltfContainer` | [ADR-215](https://adr.decentraland.org/adr/ADR-215) (Draft)  | ✅        | ✅        |       | ✅  |
+| `Animator`      | ADR-216 (PENDING)                                            | ✅        |           |       | ✅  |
 
 # Implementation, part 2: Seeing other people
 
@@ -107,7 +107,7 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | `TextShape`                     | PENDING                                             |      |         |       | ✅  |
 | `PointerLock`                   | PENDING                                             |      |         |       |     |
 | `VideoPlayer`                   | PENDING                                             |      |         |       |     |
-| `Visibility`                    | PENDING                                             |      |         |       |     |
+| `Visibility`                    | PENDING                                             |      |         |       | ✅  |
 | `UiTransform`                   | [ADR-124](https://adr.decentraland.org/adr/ADR-124) |      |         |       | ✅  |
 | `UiCanvasInformation`           | [ADR-124](https://adr.decentraland.org/adr/ADR-124) |      |         |       |     |
 | `UiBackground`                  | [ADR-125](https://adr.decentraland.org/adr/ADR-125) |      |         |       | ✅  |
