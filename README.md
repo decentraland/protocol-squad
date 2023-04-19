@@ -67,7 +67,7 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | `Raycast`       | [ADR-200](https://adr.decentraland.org/adr/ADR-200) (Draft)  | ✅        | ✅        |       | ✅  |
 | `PointerEvents` | [ADR-214](https://adr.decentraland.org/adr/ADR-214) (Draft)  |           |           |       | ✅  |
 | `GltfContainer` | [ADR-215](https://adr.decentraland.org/adr/ADR-215) (Draft)  | ✅        | ✅        |       | ✅  |
-| `Animator`      | ADR-216 (PENDING)                                            | ✅        |           |       | ✅  |
+| `Animator`      | ADR-216 (PENDING)                                            | ✅        | ✅        |       | ✅  |
 
 # Implementation, part 2: Seeing other people
 
