@@ -69,7 +69,7 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | `GltfContainer`             | [ADR-215](https://adr.decentraland.org/adr/ADR-215) (Draft)  | ✅        | ✅        |       | ✅  |
 | `GltfContainerLoadingState` | [ADR-215](https://adr.decentraland.org/adr/ADR-215) (Draft)  |           | ✅        |       | ✅  |
 | `Animator`                  | ADR-216 (PENDING)                                            | ✅        | ✅        |       | ✅  |
-| `EngineInfo`                | [ADR-148](https://adr.decentraland.org/adr/ADR-148) (Living) |           | ✅        |       |     |
+| `EngineInfo`                | [ADR-148](https://adr.decentraland.org/adr/ADR-148) (Living) |           | ✅        |       | ✅  |
 
 # Implementation, part 2: Seeing other people
 
