@@ -43,20 +43,20 @@ The team also focuses on documenting the protocol in the shape of [Architecture 
 
 At this stage, the implementations will focus on loading and unloading scenes, render their content in the world and oferring basic interactivity.
 
-| Feature                    | Specification                                                | Bevy | Babylon | Unity |
-| -------------------------- | ------------------------------------------------------------ | ---- | ------- | ----- |
-| `CI Tests`                 | Continous automated testing in commits and pull requests     | ✅   | ✅      |       |
-| `Continous release`        | Continous release of testable artifacts                      |      | ✅      |       |
-| `Load and unload scenes`   | PENDING                                                      | ✅   | ✅      |       |
-| `Scene Runtime`            | [ADR-133](https://adr.decentraland.org/adr/ADR-133) (Living) | ✅   | ✅      |       |
-| `CRDT protocol`            | [ADR-117](https://adr.decentraland.org/adr/ADR-117) (Living) | ✅   | ✅      |       |
-| `Scene Tick`               | [ADR-148](https://adr.decentraland.org/adr/ADR-148) (Living) | ✅   | ✅      |       |
+| Feature                    | Specification                                                                                                    | Bevy | Babylon | Unity |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---- | ------- | ----- |
+| `CI Tests`                 | Continous automated testing in commits and pull requests                                                         | ✅   | ✅      |       |
+| `Continous release`        | Continous release of testable artifacts                                                                          |      | ✅      |       |
+| `Load and unload scenes`   | PENDING                                                                                                          | ✅   | ✅      |       |
+| `Scene Runtime`            | [ADR-133](https://adr.decentraland.org/adr/ADR-133) (Living)                                                     | ✅   | ✅      |       |
+| `CRDT protocol`            | [ADR-117](https://adr.decentraland.org/adr/ADR-117) (Living)                                                     | ✅   | ✅      |       |
+| `Scene Tick`               | [ADR-148](https://adr.decentraland.org/adr/ADR-148) (Living)                                                     | ✅   | ✅      |       |
 | `Load static realm/world`  | [ADR-110](https://adr.decentraland.org/adr/ADR-110) [ADR-111](https://adr.decentraland.org/adr/ADR-111) (Living) | ✅   | ✅      |       |
-| `Resolve realm base URL`   | [ADR-144](https://adr.decentraland.org/adr/ADR-144) (Review) | ✅?  | ✅      |       |
-| `Static entitites for SDK` | [ADR-219](https://adr.decentraland.org/adr/ADR-219) (Draft)  | 1/3  | ✅      |       |
-| `Player Locomotion`        | PENDING                                                      |      |         |       |
-| `├── Colliders`            | `MeshCollider` & `GltfContainer`                             | ✅   | 1/2     |       |
-| `└── First Person Camera`  | PENDING                                                      |      | ✅      |       |
+| `Resolve realm base URL`   | [ADR-144](https://adr.decentraland.org/adr/ADR-144) (Review)                                                     | ✅?  | ✅      |       |
+| `Static entitites for SDK` | [ADR-219](https://adr.decentraland.org/adr/ADR-219) (Draft)                                                      | 1/3  | ✅      |       |
+| `Player Locomotion`        | PENDING                                                                                                          |      |         |       |
+| `├── Colliders`            | `MeshCollider` & `GltfContainer`                                                                                 | ✅   | 1/2     |       |
+| `└── First Person Camera`  | PENDING                                                                                                          |      | ✅      |       |
 
 | SDK Component               | Specification                                                | Bevy      | Babylon   | Unity | SDK |
 | --------------------------- | ------------------------------------------------------------ | --------- | --------- | ----- | --- |
