@@ -58,16 +58,18 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | `├── Colliders`            | `MeshCollider` & `GltfContainer`                             | ✅   | 1/2     |       |
 | `└── First Person Camera`  | PENDING                                                      |      | ✅      |       |
 
-| SDK Component   | Specification                                                | Bevy      | Babylon   | Unity | SDK |
-| --------------- | ------------------------------------------------------------ | --------- | --------- | ----- | --- |
-| `Transform`     | [ADR-153](https://adr.decentraland.org/adr/ADR-153) (Living) | ✅        | ✅        |       | ✅  |
-| `MeshRenderer`  | PENDING                                                      | Partially | Partially |       | ✅  |
-| `MeshCollider`  | PENDING                                                      | Partially | Partially |       | ✅  |
-| `Billboard`     | [ADR-198](https://adr.decentraland.org/adr/ADR-198) (Living) | ✅        | ✅        |       | ✅  |
-| `Raycast`       | [ADR-200](https://adr.decentraland.org/adr/ADR-200) (Draft)  | ✅        | ✅        |       | ✅  |
-| `PointerEvents` | [ADR-214](https://adr.decentraland.org/adr/ADR-214) (Draft)  |           |           |       | ✅  |
-| `GltfContainer` | [ADR-215](https://adr.decentraland.org/adr/ADR-215) (Draft)  | ✅        | ✅        |       | ✅  |
-| `Animator`      | ADR-216 (PENDING)                                            | ✅        | ✅        |       | ✅  |
+| SDK Component               | Specification                                                | Bevy      | Babylon   | Unity | SDK |
+| --------------------------- | ------------------------------------------------------------ | --------- | --------- | ----- | --- |
+| `Transform`                 | [ADR-153](https://adr.decentraland.org/adr/ADR-153) (Living) | ✅        | ✅        |       | ✅  |
+| `MeshRenderer`              | PENDING                                                      | Partially | Partially |       | ✅  |
+| `MeshCollider`              | PENDING                                                      | Partially | Partially |       | ✅  |
+| `Billboard`                 | [ADR-198](https://adr.decentraland.org/adr/ADR-198) (Living) | ✅        | ✅        |       | ✅  |
+| `Raycast`                   | [ADR-200](https://adr.decentraland.org/adr/ADR-200) (Draft)  | ✅        | ✅        |       | ✅  |
+| `PointerEvents`             | [ADR-214](https://adr.decentraland.org/adr/ADR-214) (Draft)  |           |           |       | ✅  |
+| `GltfContainer`             | [ADR-215](https://adr.decentraland.org/adr/ADR-215) (Draft)  | ✅        | ✅        |       | ✅  |
+| `GltfContainerLoadingState` | [ADR-215](https://adr.decentraland.org/adr/ADR-215) (Draft)  |           | ✅        |       | ✅  |
+| `Animator`                  | ADR-216 (PENDING)                                            | ✅        | ✅        |       | ✅  |
+| `EngineInfo`                | [ADR-148](https://adr.decentraland.org/adr/ADR-148) (Living) |           | ✅        |       |     |
 
 # Implementation, part 2: Seeing other people
 
