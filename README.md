@@ -23,7 +23,7 @@ The team also focuses on documenting the protocol in the shape of [Architecture 
 
 ## Babylon.js + Typescript
 
-**Repository**: https://github.com/decentrand/hammurabi  
+**Repository**: https://github.com/decentraland/hammurabi
 **Objective**: It is the educational implementation of Decentraland. Its main objective is to provide a clear standard/reference implementation that implements the Decentraland protocol in the most readable and correct way possible. Even though it contains many performance optimizations, complex optimizations are left for other explorers to optimize this one for readability. The test coverage of this implementation should be the highest and its objective is to be the "reference implementation" when implementing new explorers from scratch.  
 **Current state**: ON TRACK 🟢
 
