@@ -29,7 +29,7 @@ The team also focuses on documenting the protocol in the shape of [Architecture 
 
 ## Bevy + Rust
 
-**Repository**: https://github.com/decentrand/bevy-explorer  
+**Repository**: https://github.com/decentraland/bevy-explorer
 **Objective**: Rust may be the greatest language for the coming decades, and its open source nature is very aligned with Decentraland's mission. The same happens with Bevy (the engine). Internally, Bevy is already implemented using an ECS, at the moment of writing this document, creating a Decentraland Explorer in this technology seems to be the best decision long term.  
 **Current state**: ON TRACK 🟢
 
