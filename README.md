@@ -49,14 +49,14 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 
 | Feature                    | Specification                                                                                                    | Bevy | Babylon | Godot |
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---- | ------- | ----- |
-| `CI Tests`                 | Continous automated testing in commits and pull requests                                                         | ✅   | ✅      |       |
-| `Continous release`        | Continous release of testable artifacts                                                                          | ✅   | ✅      |       |
-| `Load and unload scenes`   | PENDING                                                                                                          | ✅   | ✅      |       |
-| `Scene Runtime`            | [ADR-133](https://adr.decentraland.org/adr/ADR-133) (Living)                                                     | ✅   | ✅      |       |
-| `CRDT protocol`            | [ADR-117](https://adr.decentraland.org/adr/ADR-117) (Living)                                                     | ✅   | ✅      |       |
+| `CI Tests`                 | Continous automated testing in commits and pull requests                                                         | ✅   | ✅      | Partially |
+| `Continous release`        | Continous release of testable artifacts                                                                          | ✅   | ✅      | ✅    |
+| `Load and unload scenes`   | PENDING                                                                                                          | ✅   | ✅      | ✅    |
+| `Scene Runtime`            | [ADR-133](https://adr.decentraland.org/adr/ADR-133) (Living)                                                     | ✅   | ✅      | ✅    |
+| `CRDT protocol`            | [ADR-117](https://adr.decentraland.org/adr/ADR-117) (Living)                                                     | ✅   | ✅      | ✅    |
 | `Scene Tick`               | [ADR-148](https://adr.decentraland.org/adr/ADR-148) (Living)                                                     | ✅   | ✅      |       |
-| `Load static realm/world`  | [ADR-110](https://adr.decentraland.org/adr/ADR-110) [ADR-111](https://adr.decentraland.org/adr/ADR-111) (Living) | ✅   | ✅      |       |
-| `Resolve realm base URL`   | [ADR-144](https://adr.decentraland.org/adr/ADR-144) (Review)                                                     | ✅   | ✅      |       |
+| `Load static realm/world`  | [ADR-110](https://adr.decentraland.org/adr/ADR-110) [ADR-111](https://adr.decentraland.org/adr/ADR-111) (Living) | ✅   | ✅      | ✅    |
+| `Resolve realm base URL`   | [ADR-144](https://adr.decentraland.org/adr/ADR-144) (Review)                                                     | ✅   | ✅      | ✅    |
 | `Static entitites for SDK` | [ADR-219](https://adr.decentraland.org/adr/ADR-219) (Draft)                                                      | ✅   | ✅      |       |
 | `Player Locomotion`        | PENDING                                                                                                          | ✅   | ✅      |       |
 | `├── Colliders`            | `MeshCollider` & `GltfContainer`                                                                                 | ✅   | 1/2     |       |
@@ -64,13 +64,13 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 
 | SDK Component               | Specification                                                | Bevy      | Babylon   | Godot | SDK |
 | --------------------------- | ------------------------------------------------------------ | --------- | --------- | ----- | --- |
-| `Transform`                 | [ADR-153](https://adr.decentraland.org/adr/ADR-153) (Living) | ✅        | ✅        |       | ✅  |
-| `MeshRenderer`              | PENDING                                                      | Partially | Partially |       | ✅  |
-| `MeshCollider`              | PENDING                                                      | Partially | Partially |       | ✅  |
+| `Transform`                 | [ADR-153](https://adr.decentraland.org/adr/ADR-153) (Living) | ✅        | ✅        | ✅     | ✅  |
+| `MeshRenderer`              | PENDING                                                      | Partially | Partially | Partially | ✅  |
+| `MeshCollider`              | PENDING                                                      | Partially | Partially | Partially | ✅  |
 | `Billboard`                 | [ADR-198](https://adr.decentraland.org/adr/ADR-198) (Living) | ✅        | ✅        |       | ✅  |
 | `Raycast`                   | [ADR-200](https://adr.decentraland.org/adr/ADR-200) (Draft)  | ✅        | ✅        |       | ✅  |
 | `PointerEvents`             | [ADR-214](https://adr.decentraland.org/adr/ADR-214) (Draft)  | ✅        | ✅        |       | ✅  |
-| `GltfContainer`             | [ADR-215](https://adr.decentraland.org/adr/ADR-215) (Draft)  | ✅        | ✅        |       | ✅  |
+| `GltfContainer`             | [ADR-215](https://adr.decentraland.org/adr/ADR-215) (Draft)  | ✅        | ✅        | ✅    | ✅  |
 | `GltfContainerLoadingState` | [ADR-215](https://adr.decentraland.org/adr/ADR-215) (Draft)  | ✅        | ✅        |       | ✅  |
 | `Animator`                  | ADR-216 (PENDING)                                            | ✅        | ✅        |       | ✅  |
 | `EngineInfo`                | [ADR-148](https://adr.decentraland.org/adr/ADR-148) (Living) |           | ✅        |       | ✅  |
