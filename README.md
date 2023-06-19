@@ -54,13 +54,13 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | `Load and unload scenes`   | PENDING                                                                                                          | ✅   | ✅      | ✅    |
 | `Scene Runtime`            | [ADR-133](https://adr.decentraland.org/adr/ADR-133) (Living)                                                     | ✅   | ✅      | ✅    |
 | `CRDT protocol`            | [ADR-117](https://adr.decentraland.org/adr/ADR-117) (Living)                                                     | ✅   | ✅      | ✅    |
-| `Scene Tick`               | [ADR-148](https://adr.decentraland.org/adr/ADR-148) (Living)                                                     | ✅   | ✅      |       |
+| `Scene Tick`               | [ADR-148](https://adr.decentraland.org/adr/ADR-148) (Living)                                                     | ✅   | ✅      | ✅    |
 | `Load static realm/world`  | [ADR-110](https://adr.decentraland.org/adr/ADR-110) [ADR-111](https://adr.decentraland.org/adr/ADR-111) (Living) | ✅   | ✅      | ✅    |
 | `Resolve realm base URL`   | [ADR-144](https://adr.decentraland.org/adr/ADR-144) (Review)                                                     | ✅   | ✅      | ✅    |
-| `Static entitites for SDK` | [ADR-219](https://adr.decentraland.org/adr/ADR-219) (Draft)                                                      | ✅   | ✅      |       |
+| `Static entitites for SDK` | [ADR-219](https://adr.decentraland.org/adr/ADR-219) (Draft)                                                      | ✅   | ✅      | ✅    |
 | `Player Locomotion`        | PENDING                                                                                                          | ✅   | ✅      |       |
-| `├── Colliders`            | `MeshCollider` & `GltfContainer`                                                                                 | ✅   | 1/2     |       |
-| `└── First Person Camera`  | PENDING                                                                                                          | ✅   | ✅      |       |
+| `├── Colliders`            | `MeshCollider` & `GltfContainer`                                                                                 | ✅   | 1/2     |  ✅   |
+| `└── First Person Camera`  | PENDING                                                                                                          | ✅   | ✅      |  ✅   |
 
 | SDK Component               | Specification                                                | Bevy      | Babylon   | Godot | SDK |
 | --------------------------- | ------------------------------------------------------------ | --------- | --------- | ----- | --- |
@@ -71,7 +71,7 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | `Raycast`                   | [ADR-200](https://adr.decentraland.org/adr/ADR-200) (Draft)  | ✅        | ✅        |       | ✅  |
 | `PointerEvents`             | [ADR-214](https://adr.decentraland.org/adr/ADR-214) (Draft)  | ✅        | ✅        |       | ✅  |
 | `GltfContainer`             | [ADR-215](https://adr.decentraland.org/adr/ADR-215) (Draft)  | ✅        | ✅        | ✅    | ✅  |
-| `GltfContainerLoadingState` | [ADR-215](https://adr.decentraland.org/adr/ADR-215) (Draft)  | ✅        | ✅        |       | ✅  |
+| `GltfContainerLoadingState` | [ADR-215](https://adr.decentraland.org/adr/ADR-215) (Draft)  | ✅        | ✅        | ✅    | ✅  |
 | `Animator`                  | ADR-216 (PENDING)                                            | ✅        | ✅        |       | ✅  |
 | `EngineInfo`                | [ADR-148](https://adr.decentraland.org/adr/ADR-148) (Living) |           | ✅        |       | ✅  |
 
