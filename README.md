@@ -91,13 +91,15 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 
 # Implementation, part 3: Full SDK implementation
 
-| Feature                   | Specification | Bevy | Babylon | Godot |
-| ------------------------- | ------------- | ---- | ------- | ----- |
-| `Player Locomotion`       | PENDING       | ✅   | ✅      |       |
-| `├── Moving platforms`    | PENDING       | ✅   |         |       |
-| `├── Third person camera` | PENDING       | ✅   | ✅      |       |
-| `└── Jump`                | PENDING       | ✅   | ✅      |       |
-| `Traversal city loading`  | PENDING       | ✅   |         |       |
+| Feature                    | Specification | Bevy | Babylon | Godot |
+| -------------------------- | ------------- | ---- | ------- | ----- |
+| `Player Locomotion`        | PENDING       | ✅   | ✅      |       |
+| `├── Moving platforms`     | PENDING       | ✅   |         |       |
+| `├── Third person camera`  | PENDING       | ✅   | ✅      |       |
+| `└── Jump`                 | PENDING       | ✅   | ✅      |       |
+| `Traversal city loading`   | PENDING       | ✅   |         | ✅    |
+| Scene boundaries checker   | PENDING       |      |         |       |
+| Raycast from global scenes | PENDING       |      |         |       |
 
 | SDK Component                   | Specification                                       | Bevy | Babylon | Godot | SDK |
 | ------------------------------- | --------------------------------------------------- | ---- | ------- | ----- | --- |
@@ -121,6 +123,15 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | `UiText`                        | [ADR-125](https://adr.decentraland.org/adr/ADR-125) |      |         |       | ✅  |
 | `UiInput & UiInputResult`       | [ADR-125](https://adr.decentraland.org/adr/ADR-125) |      |         |       | ✅  |
 | `UiDropdown & UiDropdownResult` | [ADR-125](https://adr.decentraland.org/adr/ADR-125) |      |         |       | ✅  |
+
+# Future work
+
+| Feature                           | Description |
+| --------------------------------- | --------------------------------------------------- |
+| `ReferenceMaterial` SDK Component | Reuse materials and reference an entity to use its material while reducing hundreds of CRDT messages |
+| `CinematicCamera` SDK Component   | Ability to attach the camera to a specific entity while standing on a scene. Enables cinematic cameras and new game modes. |
+| GameServers | Enables scenes to run inside a specialized server. The server connects to comms and is considered an authority. The scene can trust messages from the server and automatic entity synchronization can be configured. |
+| Enable actors for comms | A novel communications architecture to enable third party actors to join the communications network of Decentraland. Unblocks game servers |
 
 # Links
 
