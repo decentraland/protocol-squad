@@ -49,7 +49,7 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 
 | Feature                    | Specification                                                                                                    | Bevy | Babylon | Godot |
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---- | ------- | ----- |
-| `CI Tests`                 | Continous automated testing in commits and pull requests                                                         | ✅   | ✅      | Partially |
+| `CI Tests`                 | Continous automated testing in commits and pull requests                                                         | ✅   | ✅      | ✅    |
 | `Continous release`        | Continous release of testable artifacts                                                                          | ✅   | ✅      | ✅    |
 | `Load and unload scenes`   | PENDING                                                                                                          | ✅   | ✅      | ✅    |
 | `Scene Runtime`            | [ADR-133](https://adr.decentraland.org/adr/ADR-133) (Living)                                                     | ✅   | ✅      | ✅    |
@@ -58,7 +58,7 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | `Load static realm/world`  | [ADR-110](https://adr.decentraland.org/adr/ADR-110) [ADR-111](https://adr.decentraland.org/adr/ADR-111) (Living) | ✅   | ✅      | ✅    |
 | `Resolve realm base URL`   | [ADR-144](https://adr.decentraland.org/adr/ADR-144) (Review)                                                     | ✅   | ✅      | ✅    |
 | `Static entitites for SDK` | [ADR-219](https://adr.decentraland.org/adr/ADR-219) (Draft)                                                      | ✅   | ✅      | ✅    |
-| `Player Locomotion`        | PENDING                                                                                                          | ✅   | ✅      |       |
+| `Player Locomotion`        | PENDING                                                                                                          | ✅   | ✅      | Partially      |
 | `├── Colliders`            | `MeshCollider` & `GltfContainer`                                                                                 | ✅   | 1/2     |  ✅   |
 | `└── First Person Camera`  | PENDING                                                                                                          | ✅   | ✅      |  ✅   |
 
@@ -67,13 +67,13 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | `Transform`                 | [ADR-153](https://adr.decentraland.org/adr/ADR-153) (Living) | ✅        | ✅        | ✅     | ✅  |
 | `MeshRenderer`              | PENDING                                                      | Partially | Partially | Partially | ✅  |
 | `MeshCollider`              | PENDING                                                      | Partially | Partially | Partially | ✅  |
-| `Billboard`                 | [ADR-198](https://adr.decentraland.org/adr/ADR-198) (Living) | ✅        | ✅        |       | ✅  |
-| `Raycast`                   | [ADR-200](https://adr.decentraland.org/adr/ADR-200) (Draft)  | ✅        | ✅        |       | ✅  |
-| `PointerEvents`             | [ADR-214](https://adr.decentraland.org/adr/ADR-214) (Draft)  | ✅        | ✅        |       | ✅  |
+| `Billboard`                 | [ADR-198](https://adr.decentraland.org/adr/ADR-198) (Living) | ✅        | ✅        | ✅    | ✅  |
+| `Raycast`                   | [ADR-200](https://adr.decentraland.org/adr/ADR-200) (Draft)  | ✅        | ✅        | ✅    | ✅  |
+| `PointerEvents`             | [ADR-214](https://adr.decentraland.org/adr/ADR-214) (Draft)  | ✅        | ✅        | ✅    | ✅  |
 | `GltfContainer`             | [ADR-215](https://adr.decentraland.org/adr/ADR-215) (Draft)  | ✅        | ✅        | ✅    | ✅  |
 | `GltfContainerLoadingState` | [ADR-215](https://adr.decentraland.org/adr/ADR-215) (Draft)  | ✅        | ✅        | ✅    | ✅  |
-| `Animator`                  | ADR-216 (PENDING)                                            | ✅        | ✅        |       | ✅  |
-| `EngineInfo`                | [ADR-148](https://adr.decentraland.org/adr/ADR-148) (Living) |           | ✅        |       | ✅  |
+| `Animator`                  | ADR-216 (PENDING)                                            | ✅        | ✅        | ✅    | ✅  |
+| `EngineInfo`                | [ADR-148](https://adr.decentraland.org/adr/ADR-148) (Living) |           | ✅        | ✅    | ✅  |
 
 # Implementation, part 2: Seeing other people
 
@@ -94,8 +94,8 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | Feature                    | Specification | Bevy | Babylon | Godot |
 | -------------------------- | ------------- | ---- | ------- | ----- |
 | `Player Locomotion`        | PENDING       | ✅   | ✅      |       |
-| `├── Moving platforms`     | PENDING       | ✅   |         |       |
-| `├── Third person camera`  | PENDING       | ✅   | ✅      |       |
+| `├── Moving platforms`     | PENDING       | ✅   |         | ✅    |
+| `├── Third person camera`  | PENDING       | ✅   | ✅      | ✅    |
 | `└── Jump`                 | PENDING       | ✅   | ✅      |       |
 | `Traversal city loading`   | PENDING       | ✅   |         | ✅    |
 | Scene boundaries checker   | PENDING       |      |         |       |
@@ -105,7 +105,7 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | ------------------------------- | --------------------------------------------------- | ---- | ------- | ----- | --- |
 | `PointerLock`                   | PENDING                                             |      |         |       |     |
 | `CameraMode`                    | PENDING                                             |      |         |       | ✅  |
-| `Material`                      | PENDING                                             | ✅   | ✅      |       | ✅  |
+| `Material`                      | PENDING                                             | ✅   | ✅      | Partially    | ✅  |
 | `Cinematic`                     | PENDING                                             |      |         |       |     |
 | `AvatarAttach`                  | PENDING                                             |      |         |       | ✅  |
 | `AudioSource`                   | PENDING                                             |      |         |       | ✅  |
