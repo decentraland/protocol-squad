@@ -73,21 +73,21 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | `GltfContainer`             | [ADR-215](https://adr.decentraland.org/adr/ADR-215) (Draft)  | ✅        | ✅        | ✅    | ✅  |
 | `GltfContainerLoadingState` | [ADR-215](https://adr.decentraland.org/adr/ADR-215) (Draft)  | ✅        | ✅        | ✅    | ✅  |
 | `Animator`                  | ADR-216 (PENDING)                                            | ✅        | ✅        | ✅    | ✅  |
-| `EngineInfo`                | [ADR-148](https://adr.decentraland.org/adr/ADR-148) (Living) |           | ✅        | ✅    | ✅  |
+| `EngineInfo`                | [ADR-148](https://adr.decentraland.org/adr/ADR-148) (Living) | ✅        | ✅        | ✅    | ✅  |
 
 # Implementation, part 2: Seeing other people
 
 | Feature                              | Specification                                       | Bevy | Babylon | Godot |
 | ------------------------------------ | --------------------------------------------------- | ---- | ------- | ----- |
-| `Load a global scene (AvatarsScene)` | PENDING                                             | ✅   | ✅      |       |
-| `Create ephemeral identity`          | PENDING                                             | ✅   | ✅      |       |
-| `Connect to WebSocket transport`     | PENDING                                             | ✅   | ✅      |       |
-| `├──Transport implementation`        | [ADR-105](https://adr.decentraland.org/adr/ADR-105) | ✅   | ✅      |       |
-| `└──Expose transport to SDK`         | PENDING                                             |      |         |       |
+| `Load a global scene (AvatarsScene)` | PENDING                                             | ✅   | ✅      |  ✅    |
+| `Create ephemeral identity`          | PENDING                                             | ✅   | ✅      |  ✅    |
+| `Connect to WebSocket transport`     | PENDING                                             | ✅   | ✅      |  ✅    |
+| `├──Transport implementation`        | [ADR-105](https://adr.decentraland.org/adr/ADR-105) | ✅   | ✅      |  ✅    |
+| `└──Expose transport to SDK`         | PENDING                                             |      |        |       |
 
 | SDK Component | Specification                                           | Bevy | Babylon | Godot | SDK |
 | ------------- | ------------------------------------------------------- | ---- | ------- | ----- | --- |
-| `AvatarShape` | PENDING Render avatars with custom wearables and emotes | ✅   | ✅      |       | ✅  |
+| `AvatarShape` | PENDING Render avatars with custom wearables and emotes | ✅   | ✅      |  ✅     | ✅  |
 
 # Implementation, part 3: Full SDK implementation
 
@@ -99,32 +99,41 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | `└── Jump`                 | PENDING       | ✅   | ✅      |       |
 | `Traversal city loading`   | PENDING       | ✅   |         | ✅    |
 | Scene boundaries checker   | PENDING       |      |         |       |
-| Raycast from global scenes | PENDING       |      |         |       |
 
-| SDK Component                   | Specification                                       | Bevy | Babylon | Godot | SDK |
+
+| Runtime API                   | Specification                                       | Bevy | Babylon | Godot | Foundation Client |
+| ----------------------------- | --------------------------------------------------- | ---- | ------- | ----- | ----------------- |
+| fetch                         | Standard specification                              | ✅   | ✅       |       | ✅                |
+| WebSocket                     | Standard specification                              |      | ✅      |        | ✅                |
+| PortableExperiences           |                                                     |      |         |       | ✅                 |
+| RestrictedActions             |                                                     | Partially     |         |       | ✅                 |
+| Runtime                       |                                                     | Partially     |         |       | ✅                 |
+| Scene                         |                                                     | Partially     |         |       | ✅                 |
+| SignedFetch                   |                                                     |      |         |       | ✅                 |
+
+| SDK Component                   | Specification                                       | Bevy | Babylon | Godot | Foundation Client |
 | ------------------------------- | --------------------------------------------------- | ---- | ------- | ----- | --- |
 | `PointerLock`                   | PENDING                                             |      |         |       |     |
 | `CameraMode`                    | PENDING                                             |      |         |       | ✅  |
 | `Material`                      | PENDING                                             | ✅   | ✅      | Partially    | ✅  |
-| `Cinematic`                     | PENDING                                             |      |         |       |     |
-| `AvatarAttach`                  | PENDING                                             |      |         |       | ✅  |
-| `AudioSource`                   | PENDING                                             |      |         |       | ✅  |
-| `AudioStream`                   | PENDING                                             |      |         |       | ✅  |
-| `CameraMode`                    | PENDING                                             |      |         |       | ✅  |
-| `CameraModeArea`                | PENDING                                             |      |         |       |     |
-| `TextShape`                     | PENDING                                             |      |         |       | ✅  |
+| `AvatarAttach`                  | PENDING                                             | ✅     |         |       | ✅  |
+| `AudioSource`                   | PENDING                                             | ✅     |         |       | ✅  |
+| `AudioStream`                   | PENDING                                             | ✅     |         |       | ✅  |
+| `CameraMode`                    | PENDING                                             | ✅      |         |       | ✅  |
+| `CameraModeArea`                | PENDING                                             | ✅      |         |       |     |
+| `TextShape`                     | PENDING                                             | Partially     |         | Partially      | ✅  |
 | `PointerLock`                   | PENDING                                             |      |         |       |     |
-| `VideoPlayer`                   | PENDING                                             |      |         |       |     |
-| `Visibility`                    | PENDING                                             |      |         |       | ✅  |
-| `UiTransform`                   | [ADR-124](https://adr.decentraland.org/adr/ADR-124) |      |         |       | ✅  |
-| `UiCanvasInformation`           | [ADR-124](https://adr.decentraland.org/adr/ADR-124) |      |         |       |     |
-| `UiBackground`                  | [ADR-125](https://adr.decentraland.org/adr/ADR-125) |      |         |       | ✅  |
-| `UiLabel`                       | [ADR-125](https://adr.decentraland.org/adr/ADR-125) |      |         |       | ✅  |
-| `UiText`                        | [ADR-125](https://adr.decentraland.org/adr/ADR-125) |      |         |       | ✅  |
-| `UiInput & UiInputResult`       | [ADR-125](https://adr.decentraland.org/adr/ADR-125) |      |         |       | ✅  |
-| `UiDropdown & UiDropdownResult` | [ADR-125](https://adr.decentraland.org/adr/ADR-125) |      |         |       | ✅  |
+| `VideoPlayer`                   | PENDING                                             | ✅     |         | ✅      |     |
+| `Visibility`                    | PENDING                                             | ✅     |         |      | ✅  |
+| `UiTransform`                   | [ADR-124](https://adr.decentraland.org/adr/ADR-124) | ✅      |         |       | ✅  |
+| `UiCanvasInformation`           | [ADR-124](https://adr.decentraland.org/adr/ADR-124) | ✅      |         |       |     |
+| `UiBackground`                  | [ADR-125](https://adr.decentraland.org/adr/ADR-125) | ✅      |         |       | ✅  |
+| `UiLabel`                       | [ADR-125](https://adr.decentraland.org/adr/ADR-125) | ✅      |         |       | ✅  |
+| `UiText`                        | [ADR-125](https://adr.decentraland.org/adr/ADR-125) | ✅      |         |       | ✅  |
+| `UiInput & UiInputResult`       | [ADR-125](https://adr.decentraland.org/adr/ADR-125) | ✅      |         |       | ✅  |
+| `UiDropdown & UiDropdownResult` | [ADR-125](https://adr.decentraland.org/adr/ADR-125) | ✅      |         |       | ✅  |
 
-# Future work
+# Future Ideas
 
 | Feature                           | Description |
 | --------------------------------- | --------------------------------------------------- |
@@ -132,6 +141,7 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | `CinematicCamera` SDK Component   | Ability to attach the camera to a specific entity while standing on a scene. Enables cinematic cameras and new game modes. |
 | GameServers | Enables scenes to run inside a specialized server. The server connects to comms and is considered an authority. The scene can trust messages from the server and automatic entity synchronization can be configured. |
 | Enable actors for comms | A novel communications architecture to enable third party actors to join the communications network of Decentraland. Unblocks game servers |
+| Raycast from global scenes | |
 
 # Links
 
