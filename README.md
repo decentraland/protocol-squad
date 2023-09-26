@@ -58,7 +58,7 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | `Load static realm/world`  | [ADR-110](https://adr.decentraland.org/adr/ADR-110) [ADR-111](https://adr.decentraland.org/adr/ADR-111) (Living) | ✅   | ✅      | ✅    |
 | `Resolve realm base URL`   | [ADR-144](https://adr.decentraland.org/adr/ADR-144) (Review)                                                     | ✅   | ✅      | ✅    |
 | `Static entitites for SDK` | [ADR-219](https://adr.decentraland.org/adr/ADR-219) (Draft)                                                      | ✅   | ✅      | ✅    |
-| `Player Locomotion`        | PENDING                                                                                                          | ✅   | ✅      | Partially      |
+| `Player Locomotion`        | PENDING                                                                                                          | ✅   | ✅      | ✅    |
 | `├── Colliders`            | `MeshCollider` & `GltfContainer`                                                                                 | ✅   | 1/2     |  ✅   |
 | `└── First Person Camera`  | PENDING                                                                                                          | ✅   | ✅      |  ✅   |
 
@@ -96,42 +96,49 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | `Player Locomotion`        | PENDING       | ✅   | ✅      |       |
 | `├── Moving platforms`     | PENDING       | ✅   |         | ✅    |
 | `├── Third person camera`  | PENDING       | ✅   | ✅      | ✅    |
-| `└── Jump`                 | PENDING       | ✅   | ✅      |       |
+| `└── Jump`                 | PENDING       | ✅   | ✅      |  Only functionality     |
 | `Traversal city loading`   | PENDING       | ✅   |         | ✅    |
 | Scene boundaries checker   | PENDING       |      |         |       |
 
 
-| Runtime API                   | Specification                                       | Bevy | Babylon | Godot | Foundation Client |
+| [Runtime API](https://github.com/decentraland/sdk/issues/930)                   | Specification                                       | Bevy | Babylon | Godot | Foundation Client |
 | ----------------------------- | --------------------------------------------------- | ---- | ------- | ----- | ----------------- |
-| fetch                         | Standard specification                              | ✅   | ✅       |       | ✅                |
-| WebSocket                     | Standard specification                              |      | ✅      |        | ✅                |
-| PortableExperiences           |                                                     |      |         |       | ✅                 |
-| RestrictedActions             |                                                     | Partially     |         |       | ✅                 |
-| Runtime                       |                                                     | Partially     |         |       | ✅                 |
-| Scene                         |                                                     | Partially     |         |       | ✅                 |
-| SignedFetch                   |                                                     |      |         |       | ✅                 |
+| fetch                         | [ADR-133 addition](https://github.com/decentraland/adr/pull/256)                              | ✅   | ✅       |  ✅       | ✅                |
+| WebSocket                     | [ADR-133 addition](https://github.com/decentraland/adr/pull/256)                               |   ✅     | ✅      |   ✅       | ✅                |
+| PortableExperiences           |                                                     |  WIP    |         |       | ✅                 |
+| RestrictedActions             |                                                     |  ✅      |         |       | ✅                 |
+| Runtime                       |                                                     |  ✅     |         |  Partially      | ✅                 |
+| SignedFetch                   |                                                     |  ✅    |         |  WIP     | ✅                 |
+| CommsApi                   |                                                     |     |         |       | ✅                 |
 
 | SDK Component                   | Specification                                       | Bevy | Babylon | Godot | Foundation Client |
 | ------------------------------- | --------------------------------------------------- | ---- | ------- | ----- | --- |
 | `PointerLock`                   | PENDING                                             |      |         |       |     |
-| `CameraMode`                    | PENDING                                             |      |         |       | ✅  |
-| `Material`                      | PENDING                                             | ✅   | ✅      | Partially    | ✅  |
-| `AvatarAttach`                  | PENDING                                             | ✅     |         |       | ✅  |
-| `AudioSource`                   | PENDING                                             | ✅     |         |       | ✅  |
-| `AudioStream`                   | PENDING                                             | ✅     |         |       | ✅  |
 | `CameraMode`                    | PENDING                                             | ✅      |         |       | ✅  |
 | `CameraModeArea`                | PENDING                                             | ✅      |         |       |     |
+| `Material`                      | PENDING                                             | ✅   | ✅      | Partially    | ✅  |
+| `AvatarAttach`                  | PENDING                                             | ✅     |         |       | ✅  |
 | `TextShape`                     | PENDING                                             | Partially     |         | Partially      | ✅  |
-| `PointerLock`                   | PENDING                                             |      |         |       |     |
-| `VideoPlayer`                   | PENDING                                             | ✅     |         | ✅      |     |
 | `Visibility`                    | PENDING                                             | ✅     |         |      | ✅  |
+| `AudioSource`                   | PENDING                                             | ✅     |         |       | ✅  |
+| `AudioStream`                   | PENDING                                             | ✅     |         |       | ✅  |
+| `VideoPlayer`                   | PENDING                                             | ✅     |         | ✅      |     |
 | `UiTransform`                   | [ADR-124](https://adr.decentraland.org/adr/ADR-124) | ✅      |         |       | ✅  |
 | `UiCanvasInformation`           | [ADR-124](https://adr.decentraland.org/adr/ADR-124) | ✅      |         |       |     |
 | `UiBackground`                  | [ADR-125](https://adr.decentraland.org/adr/ADR-125) | ✅      |         |       | ✅  |
 | `UiLabel`                       | [ADR-125](https://adr.decentraland.org/adr/ADR-125) | ✅      |         |       | ✅  |
 | `UiText`                        | [ADR-125](https://adr.decentraland.org/adr/ADR-125) | ✅      |         |       | ✅  |
 | `UiInput & UiInputResult`       | [ADR-125](https://adr.decentraland.org/adr/ADR-125) | ✅      |         |       | ✅  |
-| `UiDropdown & UiDropdownResult` | [ADR-125](https://adr.decentraland.org/adr/ADR-125) | ✅      |         |       | ✅  |
+| `UiDropdown & UiDropdownResult` | [ADR-125](https://adr.decentraland.org/adr/ADR-125) | ✅      |         |       | ✅  ||
+
+# Comms Support
+
+| Feature                              | Bevy | Babylon | Godot |
+| ------------------------------------ | ---- | ------- | ----- |
+| `WebSocket Room` |                   | ✅   | ✅      |  ✅    |
+| `SignedLogin` |                      | ✅   | ✅      |  ✅    |
+| `LiveKit` |                          | ✅   | ✅      |  ✅    |
+| `├──VoiceChat`                       | ✅   | ✅      |  ✅    |
 
 # Future Ideas
 
