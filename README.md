@@ -135,10 +135,16 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 
 | Feature                              | Bevy | Babylon | Godot |
 | ------------------------------------ | ---- | ------- | ----- |
-| `WebSocket Room` |                   | ✅   | ✅      |  ✅    |
-| `SignedLogin` |                      | ✅   | ✅      |  ✅    |
-| `LiveKit` |                          | ✅   | ✅      |  ✅    |
-| `├──VoiceChat`                       | ✅   | ✅      |  ✅    |
+| `WebSocket Room`                    | ✅   | ✅      |  ✅    |
+| `SignedLogin`                       | ✅   | ✅      |  ✅    |
+| `LiveKit`                           | ✅   | PR     |  ✅    |
+| `├──VoiceChat`                       | ✅   | PR     |  ✅    |
+
+# Runtime 6 support (aka SDK6)
+| Feature                              | Bevy | Babylon | Godot | Foundation Client |
+| ------------------------------------ | ---- | ------- | ----- | ----- |
+| `Native support`                     |  :x:   |  :x:     | :x:   | ✅  |
+| [`Proxy support`](https://github.com/decentraland/sdk7-adaption-layer)            |   ✅ |       |  ✅    |  |
 
 # Future Ideas
 
