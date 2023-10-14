@@ -113,7 +113,6 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 
 | SDK Component                   | Specification                                       | Bevy | Babylon | Godot | Foundation Client |
 | ------------------------------- | --------------------------------------------------- | ---- | ------- | ----- | --- |
-| `PointerLock`                   | PENDING                                             |      |         |       |     |
 | `CameraMode`                    | PENDING                                             | ✅      |         |       | ✅  |
 | `CameraModeArea`                | PENDING                                             | ✅      |         |       |     |
 | `Material`                      | PENDING                                             | ✅   | ✅      | Partially    | ✅  |
@@ -125,7 +124,6 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | `VideoPlayer`                   | PENDING                                             | ✅     |         | ✅      |     |
 | `UiTransform`                   | [ADR-124](https://adr.decentraland.org/adr/ADR-124) | ✅      |         |       | ✅  |
 | `UiCanvasInformation`           | [ADR-124](https://adr.decentraland.org/adr/ADR-124) | ✅      |         |       |     |
-| `UiBackground`                  | [ADR-125](https://adr.decentraland.org/adr/ADR-125) | ✅      |         |       | ✅  |
 | `UiLabel`                       | [ADR-125](https://adr.decentraland.org/adr/ADR-125) | ✅      |         |       | ✅  |
 | `UiText`                        | [ADR-125](https://adr.decentraland.org/adr/ADR-125) | ✅      |         |       | ✅  |
 | `UiInput & UiInputResult`       | [ADR-125](https://adr.decentraland.org/adr/ADR-125) | ✅      |         |       | ✅  |
@@ -145,6 +143,25 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | ------------------------------------ | ---- | ------- | ----- | ----- |
 | `Native support`                     |  :x:   |  :x:     | :x:   | ✅  |
 | [`Proxy support`](https://github.com/decentraland/sdk7-adaption-layer)            |   ✅ |       |  ✅    |  |
+
+# Proposal #2: implementation part 1
+### SDK Components
+| SDK Component                   | Bevy | Godot |
+| ------------------------------- | ---- |  ----- |
+| `PointerLock`                   |      |        |
+| `AvatarModifierArea`            |      |        |
+| `NftShape`                      |      |        |
+| `VideoEvent`                    |      |        |
+| `Tween`                         |      |        |
+| `TweenSequence`                 |      |        |
+| `TweenState`                    |      |        | 
+
+### Explorer functionality Components
+| Web3 - Sign-in                 | Bevy | Godot |
+| ------------------------------- | ---- |  ----- |
+| `External wallet`            |      |        | 
+| `Browser wallet`            |      |        | 
+| `Web2 method`            |      |        | 
 
 # Future Ideas
 
