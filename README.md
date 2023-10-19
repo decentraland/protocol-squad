@@ -113,14 +113,14 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 
 | SDK Component                   | Specification                                       | Bevy | Babylon | Godot | Foundation Client |
 | ------------------------------- | --------------------------------------------------- | ---- | ------- | ----- | --- |
-| `CameraMode`                    | PENDING                                             | ✅      |         |       | ✅  |
-| `CameraModeArea`                | PENDING                                             | ✅      |         |       |     |
+| `CameraMode`                    | PENDING                                             | ✅      |         |    ✅   | ✅  |
+| `CameraModeArea`                | PENDING                                             | ✅      |         |    ✅   |     |
 | `Material`                      | PENDING                                             | ✅   | ✅      | Partially    | ✅  |
-| `AvatarAttach`                  | PENDING                                             | ✅     |         |       | ✅  |
+| `AvatarAttach`                  | PENDING                                             | ✅     |         |    ✅   | ✅  |
 | `TextShape`                     | PENDING                                             | Partially     |         | Partially      | ✅  |
-| `Visibility`                    | PENDING                                             | ✅     |         |      | ✅  |
-| `AudioSource`                   | PENDING                                             | ✅     |         |       | ✅  |
-| `AudioStream`                   | PENDING                                             | ✅     |         |       | ✅  |
+| `Visibility`                    | PENDING                                             | ✅     |         | ✅     | ✅  |
+| `AudioSource`                   | PENDING                                             | ✅     |         | ✅      | ✅  |
+| `AudioStream`                   | PENDING                                             | ✅     |         | ✅      | ✅  |
 | `VideoPlayer`                   | PENDING                                             | ✅     |         | ✅      |     |
 | `UiTransform`                   | [ADR-124](https://adr.decentraland.org/adr/ADR-124) | ✅      |         |       | ✅  |
 | `UiCanvasInformation`           | [ADR-124](https://adr.decentraland.org/adr/ADR-124) | ✅      |         |       |     |
@@ -137,6 +137,7 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | `SignedLogin`                       | ✅   | ✅      |  ✅    |
 | `LiveKit`                           | ✅   | PR     |  ✅    |
 | `├──VoiceChat`                       | ✅   | PR     |  ✅    |
+| Archipelago                        | WIP |      |     |
 
 # Runtime 6 support (aka SDK6)
 | Feature                              | Bevy | Babylon | Godot | Foundation Client |
