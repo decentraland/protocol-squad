@@ -5,9 +5,9 @@ Welcome to the State of the Protocol Squad document. This document is updated pe
 The current team members are:
 
 - @leanmendoza - Godot implementation leader
-- @menduz - Babylon implementation leader, technical coordination
+- @kuruk-mm - Godot implementer
 - @robtfm - Bevy implementation leader
-- @slezica - Documentation & technical writing
+
 
 The Protocol Squad has two objectives:
 
@@ -25,7 +25,7 @@ The team also focuses on documenting the protocol in the shape of [Architecture 
 
 **Repository**: https://github.com/decentraland/hammurabi
 **Objective**: It is the educational implementation of Decentraland. Its main objective is to provide a clear standard/reference implementation that implements the Decentraland protocol in the most readable and correct way possible. Even though it contains many performance optimizations, complex optimizations are left for other explorers to optimize this one for readability. The test coverage of this implementation should be the highest and its objective is to be the "reference implementation" when implementing new explorers from scratch.  
-**Current state**: ON TRACK 🟢
+**Current state**: ❌ CANCELLED
 
 ## Bevy + Rust
 
@@ -40,8 +40,9 @@ The team also focuses on documenting the protocol in the shape of [Architecture 
 **Current state**: ON TRACK - Started deferred 🟠
 
 ## Unity + C#
-
-**Current state**: ❌ CANCELLED, replaced by Godot. The Decentraland Foundation will take the lead with a [brand new Unity Explorer](https://github.com/decentraland/unity-explorer)
+**Repository**: https://github.com/decentraland/unity-explorer
+**Objective**: Its objective is to be a production-ready Decentraland Explorer. Developed by the Decentraland Foundation.
+**Current state**: ON TRACK 🟢
 
 # Implementation, part 1. Render interactive scenes
 
@@ -101,7 +102,7 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | Scene boundaries checker   | PENDING       |      |         |       |
 
 
-| [Runtime API](https://github.com/decentraland/sdk/issues/930)                   | Specification                                       | Bevy | Babylon | Godot | Foundation Client |
+| [Runtime API](https://github.com/decentraland/sdk/issues/930)                   | Specification                                       | Bevy | Babylon | Godot | Unity |
 | ----------------------------- | --------------------------------------------------- | ---- | ------- | ----- | ----------------- |
 | fetch                         | [ADR-133 addition](https://github.com/decentraland/adr/pull/256)                              | ✅   | ✅       |  ✅       | ✅                |
 | WebSocket                     | [ADR-133 addition](https://github.com/decentraland/adr/pull/256)                               |   ✅     | ✅      |   ✅       | ✅                |
@@ -111,7 +112,7 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | SignedFetch                   |                                                     |  ✅    |         |  WIP     | ✅                 |
 | CommsApi                   |                                                     |     |         |       | ✅                 |
 
-| SDK Component                   | Specification                                       | Bevy | Babylon | Godot | Foundation Client |
+| SDK Component                   | Specification                                       | Bevy | Babylon | Godot | Unity |
 | ------------------------------- | --------------------------------------------------- | ---- | ------- | ----- | --- |
 | `CameraMode`                    | PENDING                                             | ✅      |         |    ✅   | ✅  |
 | `CameraModeArea`                | PENDING                                             | ✅      |         |    ✅   |     |
@@ -140,7 +141,7 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | Archipelago                        | WIP |      |     |
 
 # Runtime 6 support (aka SDK6)
-| Feature                              | Bevy | Babylon | Godot | Foundation Client |
+| Feature                              | Bevy | Babylon | Godot | Unity |
 | ------------------------------------ | ---- | ------- | ----- | ----- |
 | `Native support`                     |  :x:   |  :x:     | :x:   | ✅  |
 | [`Proxy support`](https://github.com/decentraland/sdk7-adaption-layer)            |   ✅ |       |  ✅    |  |
