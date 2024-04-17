@@ -5,9 +5,15 @@ Welcome to the State of the Protocol Squad document. This document is updated pe
 The current team members are:
 
 - @leanmendoza - Godot implementation leader
-- @menduz - Babylon implementation leader, technical coordination
 - @robtfm - Bevy implementation leader
+- @kuruk-mm - Staff engineer
+- @sdilauro - Jr. Scene and Godot Developer
+
+Members that participated:
+
+- @menduz - Babylon implementation leader, technical coordination
 - @slezica - Documentation & technical writing
+
 
 The Protocol Squad has two objectives:
 
@@ -25,19 +31,19 @@ The team also focuses on documenting the protocol in the shape of [Architecture 
 
 **Repository**: https://github.com/decentraland/hammurabi
 **Objective**: It is the educational implementation of Decentraland. Its main objective is to provide a clear standard/reference implementation that implements the Decentraland protocol in the most readable and correct way possible. Even though it contains many performance optimizations, complex optimizations are left for other explorers to optimize this one for readability. The test coverage of this implementation should be the highest and its objective is to be the "reference implementation" when implementing new explorers from scratch.  
-**Current state**: ON TRACK 🟢
+**Current state**: Not maintained 🟠, the Babylon accomplished his objective, and it's suitable for educating the people to implement an Explorer
 
 ## Bevy + Rust
 
 **Repository**: https://github.com/decentraland/bevy-explorer
 **Objective**: Rust may be the greatest language for the coming decades, and its open source nature is very aligned with Decentraland's mission. The same happens with Bevy (the engine). Internally, Bevy is already implemented using an ECS, at the moment of writing this document, creating a Decentraland Explorer in this technology seems to be the best decision long term.  
-**Current state**: ON TRACK 🟢
+**Current state**: Completed 🟢
 
 ## Godot 4 + GDScript + Rust
 
 **Repository**: https://github.com/decentraland/godot-explorer
 **Objective**: Its objective is to be a production ready (or ready-to-fork) Decentraland Explorer. Godot (fully open source) has been gaining traction in the industry and more and more titles are being published and developed on Godot as time passes.
-**Current state**: ON TRACK - Started deferred 🟠
+**Current state**: Completed 🟢
 
 ## Unity + C#
 
@@ -65,8 +71,8 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | SDK Component               | Specification                                                | Bevy      | Babylon   | Godot | SDK |
 | --------------------------- | ------------------------------------------------------------ | --------- | --------- | ----- | --- |
 | `Transform`                 | [ADR-153](https://adr.decentraland.org/adr/ADR-153) (Living) | ✅        | ✅        | ✅     | ✅  |
-| `MeshRenderer`              | PENDING                                                      | Partially | Partially | Partially | ✅  |
-| `MeshCollider`              | PENDING                                                      | Partially | Partially | Partially | ✅  |
+| `MeshRenderer`              | PENDING                                                      | ✅        | Partially | ✅     | ✅  |
+| `MeshCollider`              | PENDING                                                      | ✅        | Partially | ✅     | ✅  |
 | `Billboard`                 | [ADR-198](https://adr.decentraland.org/adr/ADR-198) (Living) | ✅        | ✅        | ✅    | ✅  |
 | `Raycast`                   | [ADR-200](https://adr.decentraland.org/adr/ADR-200) (Draft)  | ✅        | ✅        | ✅    | ✅  |
 | `PointerEvents`             | [ADR-214](https://adr.decentraland.org/adr/ADR-214) (Draft)  | ✅        | ✅        | ✅    | ✅  |
@@ -93,41 +99,41 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 
 | Feature                    | Specification | Bevy | Babylon | Godot |
 | -------------------------- | ------------- | ---- | ------- | ----- |
-| `Player Locomotion`        | PENDING       | ✅   | ✅      |       |
+| `Player Locomotion`        | PENDING       | ✅   | ✅      | ✅    |
 | `├── Moving platforms`     | PENDING       | ✅   |         | ✅    |
 | `├── Third person camera`  | PENDING       | ✅   | ✅      | ✅    |
-| `└── Jump`                 | PENDING       | ✅   | ✅      |  Only functionality     |
+| `└── Jump`                 | PENDING       | ✅   | ✅      | ✅    |
 | `Traversal city loading`   | PENDING       | ✅   |         | ✅    |
-| Scene boundaries checker   | PENDING       |      |         |       |
+| Scene boundaries checker   | PENDING       | ✅   |         |       |
 
 
-| [Runtime API](https://github.com/decentraland/sdk/issues/930)                   | Specification                                       | Bevy | Babylon | Godot | Foundation Client |
+| [Runtime API](https://github.com/decentraland/sdk/issues/930)                   | Specification    | Bevy    | Babylon | Godot   | Foundation Client |
 | ----------------------------- | --------------------------------------------------- | ---- | ------- | ----- | ----------------- |
-| fetch                         | [ADR-133 addition](https://github.com/decentraland/adr/pull/256)                              | ✅   | ✅       |  ✅       | ✅                |
-| WebSocket                     | [ADR-133 addition](https://github.com/decentraland/adr/pull/256)                               |   ✅     | ✅      |   ✅       | ✅                |
-| PortableExperiences           |                                                     |  WIP    |         |       | ✅                 |
-| RestrictedActions             |                                                     |  ✅      |         |       | ✅                 |
-| Runtime                       |                                                     |  ✅     |         |  Partially      | ✅                 |
-| SignedFetch                   |                                                     |  ✅    |         |  WIP     | ✅                 |
-| CommsApi                   |                                                     |     |         |       | ✅                 |
+| fetch                         | [ADR-133 addition](https://github.com/decentraland/adr/pull/256)   |  ✅     | ✅      |  ✅     | ✅                |
+| WebSocket                     | [ADR-133 addition](https://github.com/decentraland/adr/pull/256)   |  ✅     | ✅      |  ✅     | ✅                |
+| PortableExperiences           |                                                                    |  ✅     |         |  ✅     | ✅                |
+| RestrictedActions             |                                                                    |  ✅     |         |  ✅     | ✅                |
+| Runtime                       |                                                                    |  ✅     |         |  ✅     | ✅                |
+| SignedFetch                   |                                                                    |  ✅     |         |  ✅     | ✅                |
+| CommsApi                   |                                                                       |  ✅     |         |  ✅     | ✅                |
 
 | SDK Component                   | Specification                                       | Bevy | Babylon | Godot | Foundation Client |
 | ------------------------------- | --------------------------------------------------- | ---- | ------- | ----- | --- |
-| `CameraMode`                    | PENDING                                             | ✅      |         |    ✅   | ✅  |
-| `CameraModeArea`                | PENDING                                             | ✅      |         |    ✅   |     |
-| `Material`                      | PENDING                                             | ✅   | ✅      | Partially    | ✅  |
-| `AvatarAttach`                  | PENDING                                             | ✅     |         |    ✅   | ✅  |
-| `TextShape`                     | PENDING                                             | Partially     |         | Partially      | ✅  |
-| `Visibility`                    | PENDING                                             | ✅     |         | ✅     | ✅  |
-| `AudioSource`                   | PENDING                                             | ✅     |         | ✅      | ✅  |
-| `AudioStream`                   | PENDING                                             | ✅     |         | ✅      | ✅  |
-| `VideoPlayer`                   | PENDING                                             | ✅     |         | ✅      |     |
-| `UiTransform`                   | [ADR-124](https://adr.decentraland.org/adr/ADR-124) | ✅      |         |       | ✅  |
-| `UiCanvasInformation`           | [ADR-124](https://adr.decentraland.org/adr/ADR-124) | ✅      |         |       |     |
-| `UiLabel`                       | [ADR-125](https://adr.decentraland.org/adr/ADR-125) | ✅      |         |       | ✅  |
-| `UiText`                        | [ADR-125](https://adr.decentraland.org/adr/ADR-125) | ✅      |         |       | ✅  |
-| `UiInput & UiInputResult`       | [ADR-125](https://adr.decentraland.org/adr/ADR-125) | ✅      |         |       | ✅  |
-| `UiDropdown & UiDropdownResult` | [ADR-125](https://adr.decentraland.org/adr/ADR-125) | ✅      |         |       | ✅  ||
+| `CameraMode`                    | PENDING                                             | ✅   |         | ✅    | ✅  |
+| `CameraModeArea`                | PENDING                                             | ✅   |         | ✅    |     |
+| `Material`                      | PENDING                                             | ✅   | ✅      | ✅    | ✅  |
+| `AvatarAttach`                  | PENDING                                             | ✅   |         | ✅    | ✅  |
+| `TextShape`                     | PENDING                                             | ✅   |         | ✅    | ✅  |
+| `Visibility`                    | PENDING                                             | ✅   |         | ✅    | ✅  |
+| `AudioSource`                   | PENDING                                             | ✅   |         | ✅    | ✅  |
+| `AudioStream`                   | PENDING                                             | ✅   |         | ✅    | ✅  |
+| `VideoPlayer`                   | PENDING                                             | ✅   |         | ✅    |     |
+| `UiTransform`                   | [ADR-124](https://adr.decentraland.org/adr/ADR-124) | ✅   |         | ✅    | ✅  |
+| `UiCanvasInformation`           | [ADR-124](https://adr.decentraland.org/adr/ADR-124) | ✅   |         | ✅    |     |
+| `UiLabel`                       | [ADR-125](https://adr.decentraland.org/adr/ADR-125) | ✅   |         | ✅    | ✅  |
+| `UiText`                        | [ADR-125](https://adr.decentraland.org/adr/ADR-125) | ✅   |         | ✅    | ✅  |
+| `UiInput & UiInputResult`       | [ADR-125](https://adr.decentraland.org/adr/ADR-125) | ✅   |         | ✅    | ✅  |
+| `UiDropdown & UiDropdownResult` | [ADR-125](https://adr.decentraland.org/adr/ADR-125) | ✅   |         | ✅    | ✅  ||
 
 # Comms Support
 
@@ -135,9 +141,9 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | ------------------------------------ | ---- | ------- | ----- |
 | `WebSocket Room`                    | ✅   | ✅      |  ✅    |
 | `SignedLogin`                       | ✅   | ✅      |  ✅    |
-| `LiveKit`                           | ✅   | PR     |  ✅    |
-| `├──VoiceChat`                       | ✅   | PR     |  ✅    |
-| Archipelago                        | WIP |      |     |
+| `LiveKit`                           | ✅   | PR      |  ✅    |
+| `├──VoiceChat`                      | ✅   | PR      |  ✅    |
+| Archipelago                         | ✅   |         |  ✅    |
 
 # Runtime 6 support (aka SDK6)
 | Feature                              | Bevy | Babylon | Godot | Foundation Client |
@@ -149,20 +155,20 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 ### SDK Components
 | SDK Component                   | Bevy | Godot |
 | ------------------------------- | ---- |  ----- |
-| `PointerLock`                   |      |        |
-| `AvatarModifierArea`            |      |        |
-| `NftShape`                      |      |        |
-| `VideoEvent`                    |      |        |
-| `Tween`                         |      |        |
-| `TweenSequence`                 |      |        |
-| `TweenState`                    |      |        | 
+| `PointerLock`                   | ✅   | ✅     |
+| `AvatarModifierArea`            | ✅   | ✅     |
+| `NftShape`                      | ✅   | ✅     |
+| `VideoEvent`                    | ✅   | ✅     |
+| `Tween`                         | ✅   | ✅     |
+| `TweenSequence`                 | ✅   | ✅     |
+| `TweenState`                    | ✅   | ✅     | 
 
 ### Explorer functionality Components
 | Web3 - Sign-in                 | Bevy | Godot |
 | ------------------------------- | ---- |  ----- |
-| `External wallet`            |      |        | 
-| `Browser wallet`            |      |        | 
-| `Web2 method`            |      |        | 
+| `External wallet`              | ✅   | ✅     | 
+| `Browser wallet`               | ✅   | ✅     | 
+| `Web2 method`                  | ✅   | ✅     | 
 
 # Future Ideas
 
