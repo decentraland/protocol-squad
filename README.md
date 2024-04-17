@@ -6,11 +6,14 @@ The current team members are:
 
 - @leanmendoza - Godot implementation leader
 - @robtfm - Bevy implementation leader
-- @kuruk-mm - Godot implementation leader
+- @kuruk-mm - Staff engineer
+- @sdilauro - Jr. Scene and Godot Developer
 
 Members that participated:
 
 - @menduz - Babylon implementation leader, technical coordination
+- @slezica - Documentation & technical writing
+
 
 The Protocol Squad has two objectives:
 
