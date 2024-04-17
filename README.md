@@ -45,9 +45,14 @@ The team also focuses on documenting the protocol in the shape of [Architecture 
 **Objective**: Its objective is to be a production ready (or ready-to-fork) Decentraland Explorer. Godot (fully open source) has been gaining traction in the industry and more and more titles are being published and developed on Godot as time passes.
 **Current state**: Completed 🟢
 
-## Unity + C#
+## Unity + C# (Unity Alpha)
+**Repository**: https://github.com/decentraland/unity-explorer
+**Objective**: Its objective is to be a production-ready Decentraland Explorer. Developed by the Decentraland Foundation.
+**Current state**: ON TRACK 🟢
 
-**Current state**: ❌ CANCELLED, replaced by Godot. The Decentraland Foundation will take the lead with a [brand new Unity Explorer](https://github.com/decentraland/unity-explorer)
+## Unity + C# (#1)
+**Repository**: https://github.com/decentraland/unity-renderer
+**Objective**: First unity client developed by the Decentraland Foundation
 
 # Implementation, part 1. Render interactive scenes
 
@@ -107,7 +112,7 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | Scene boundaries checker   | PENDING       | ✅   |         |       |
 
 
-| [Runtime API](https://github.com/decentraland/sdk/issues/930)                   | Specification    | Bevy    | Babylon | Godot   | Foundation Client |
+| [Runtime API](https://github.com/decentraland/sdk/issues/930)                   | Specification    | Bevy    | Babylon | Godot   | Unity #1 |
 | ----------------------------- | --------------------------------------------------- | ---- | ------- | ----- | ----------------- |
 | fetch                         | [ADR-133 addition](https://github.com/decentraland/adr/pull/256)   |  ✅     | ✅      |  ✅     | ✅                |
 | WebSocket                     | [ADR-133 addition](https://github.com/decentraland/adr/pull/256)   |  ✅     | ✅      |  ✅     | ✅                |
@@ -117,7 +122,7 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | SignedFetch                   |                                                                    |  ✅     |         |  ✅     | ✅                |
 | CommsApi                   |                                                                       |  ✅     |         |  ✅     | ✅                |
 
-| SDK Component                   | Specification                                       | Bevy | Babylon | Godot | Foundation Client |
+| SDK Component                   | Specification                                       | Bevy | Babylon | Godot | Unity #1 |
 | ------------------------------- | --------------------------------------------------- | ---- | ------- | ----- | --- |
 | `CameraMode`                    | PENDING                                             | ✅   |         | ✅    | ✅  |
 | `CameraModeArea`                | PENDING                                             | ✅   |         | ✅    |     |
@@ -146,7 +151,7 @@ At this stage, the implementations will focus on loading and unloading scenes, r
 | Archipelago                         | ✅   |         |  ✅    |
 
 # Runtime 6 support (aka SDK6)
-| Feature                              | Bevy | Babylon | Godot | Foundation Client |
+| Feature                              | Bevy | Babylon | Godot | Unity #1 |
 | ------------------------------------ | ---- | ------- | ----- | ----- |
 | `Native support`                     |  :x:   |  :x:     | :x:   | ✅  |
 | [`Proxy support`](https://github.com/decentraland/sdk7-adaption-layer)            |   ✅ |       |  ✅    |  |
