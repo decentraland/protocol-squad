@@ -23,6 +23,7 @@ The Protocol Squad has two objectives:
 There are currently three implementations being developed, each implementation has their own different objectives and tints in development.
 
 **Current objective**: 🔛 Render interactive scenes.  
+
 **Next objective**: 🔜 Connect the explorers together and see eachother in-world.
 
 The team also focuses on documenting the protocol in the shape of [Architecture Decision Records (ADR)](https://adr.decentraland.org) and as contributions to the [Official Documentation](https://docs.decentraland.org)
@@ -30,28 +31,39 @@ The team also focuses on documenting the protocol in the shape of [Architecture 
 ## Babylon.js + Typescript
 
 **Repository**: https://github.com/decentraland/hammurabi
+
 **Objective**: It is the educational implementation of Decentraland. Its main objective is to provide a clear standard/reference implementation that implements the Decentraland protocol in the most readable and correct way possible. Even though it contains many performance optimizations, complex optimizations are left for other explorers to optimize this one for readability. The test coverage of this implementation should be the highest and its objective is to be the "reference implementation" when implementing new explorers from scratch.  
+
 **Current state**: Not maintained 🟠, the Babylon accomplished his objective, and it's suitable for educating the people to implement an Explorer
 
 ## Bevy + Rust
 
 **Repository**: https://github.com/decentraland/bevy-explorer
+
 **Objective**: Rust may be the greatest language for the coming decades, and its open source nature is very aligned with Decentraland's mission. The same happens with Bevy (the engine). Internally, Bevy is already implemented using an ECS, at the moment of writing this document, creating a Decentraland Explorer in this technology seems to be the best decision long term.  
+
 **Current state**: Completed 🟢
 
 ## Godot 4 + GDScript + Rust
 
 **Repository**: https://github.com/decentraland/godot-explorer
+
 **Objective**: Its objective is to be a production ready (or ready-to-fork) Decentraland Explorer. Godot (fully open source) has been gaining traction in the industry and more and more titles are being published and developed on Godot as time passes.
+
 **Current state**: Completed 🟢
 
 ## Unity + C# (Unity Alpha)
+
 **Repository**: https://github.com/decentraland/unity-explorer
+
 **Objective**: Its objective is to be a production-ready Decentraland Explorer. Developed by the Decentraland Foundation.
+
 **Current state**: ON TRACK 🟢
 
 ## Unity + C# (#1)
+
 **Repository**: https://github.com/decentraland/unity-renderer
+
 **Objective**: First unity client developed by the Decentraland Foundation
 
 # Implementation, part 1. Render interactive scenes
